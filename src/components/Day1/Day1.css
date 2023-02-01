@@ -1,0 +1,35 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(50, 49, 49);
+    position: relative;
+}
+.world{
+    /* overflow: visible; */position: relative;
+    overflow: visible;
+    left: -350px;
+    transition: all 1s ease-in-out;
+}
+
+.world:hover{
+    rotate: -20deg
+}
+.container{
+    background-color: white;
+    padding: 50px;
+    position: relative;
+   
+}
+
+.rotate{
+    background-color: aqua;
+    position: absolute;
+
+    right: -350px;
+}
+
+
+img{
+    width: 100%;
+    
+}
