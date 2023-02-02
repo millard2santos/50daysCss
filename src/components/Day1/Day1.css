@@ -1,35 +1,103 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     padding: 0px;
     margin: 0px;
     background-color: rgb(50, 49, 49);
     position: relative;
 }
-.world{
-    /* overflow: visible; */position: relative;
-    overflow: visible;
-    left: -350px;
-    transition: all 1s ease-in-out;
-}
 
-.world:hover{
-    rotate: -20deg
-}
-.container{
-    background-color: white;
-    padding: 50px;
+
+
+.world {
     position: relative;
-   
+
+
 }
 
-.rotate{
-    background-color: aqua;
+.fa-x {
+    align-self: flex-start;
+    position: relative;
+    top: 20px
+}
+
+.fa-bars {
+    position: relative;
+    bottom: 20px;
+}
+
+.icon {
+    font-size: xx-large;
+}
+
+.circle {
     position: absolute;
+    z-index: 500;
+    display: flex;
+    padding: 20px;
+    gap: 60px;
+    justify-content: center;
+    align-items: flex-end;
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.7s ease-in-out;
 
-    right: -350px;
+    background-color: aqua;
+
+    border-radius: 50%;
+
+}
+
+.container {
+    position: relative;
+    transition: transform 0.7s ease-out;
+    transform-origin: 0 0 0;
+    background-color: white;
+    padding: 100px 200px;
+
+
+}
+
+img {
+    width: 100%;
+
 }
 
 
-img{
-    width: 100%;
+.rotate {
+    transform: rotate(-20deg);
+}
+
+.circleRotate {
+    transform: rotate(180deg);
+}
+
+.hide {
+    color: white;
+    position: fixed;
+    font-size: large;
+    transition: transform 0.5s  ;
+    left: -100px;
+    top:  50%
+}
+
+.hide:nth-of-type(2) {
+    transition: transform 0.5s  ;
+    left: -90px;
+    top:  60%;
+}
+
+.hide:nth-of-type(3) {
     
+    transition: transform 0.5s  ;
+    left: -80px;
+    top:  70%
+}
+
+.slide{
+    transform: translateX(140px);
 }
